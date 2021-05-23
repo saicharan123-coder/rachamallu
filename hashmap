@@ -1,0 +1,14 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Map<Integer,String> hm=new HashMap<>();
+		addele(hm);
+		for(Integer s:hm.keySet()) {
+			System.out.println(s+" "+hm.get(s));
+		}
+	}
+public static void addele(Map<Integer,String>hm) {
+	hm.put(1,"sai");
+	hm.put(2,"charan");
+}
+}
