@@ -1,0 +1,31 @@
+import java.util.*;
+class Student{
+	int id;
+	String name;
+	float cgpa;
+	public Student(int id,String name,float cgpa)
+	{
+		this.id=id;
+		this.name=name;
+		this.cgpa=cgpa;
+	}
+}
+public class StreamApi {
+public static void main(String[] args) {
+	List<Student> studentList =new ArrayList<Student>();
+	studentList.add(new Student(1,"sai",68.667f));
+	studentList.add(new Student(2,"rajesh",78.34f));
+	studentList.add(new Student(3,"pradeep",70.23f));
+	studentList.add(new Student(4,"suraj",99.730f));
+	studentList.add(new Student(5,"hirosh",88.243f));
+	List<Float> studentcgpalist=new ArrayList<Float>();
+	for(Student stu:studentList)
+	{
+		if(stu.cgpa<99f)
+		{
+			studentcgpalist.add(stu.cgpa);	
+		}
+	}
+	System.err.println(studentcgpalist);
+}
+}
